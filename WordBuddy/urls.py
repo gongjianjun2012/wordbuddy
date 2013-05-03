@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     (r'^js/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': 'D:/google/WordBuddy/siteResources/js'}
      ),
-
+         # before deployment, need be modified.
     (r'^css/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': 'D:/google/WordBuddy/siteResources/css/'}
      ),
@@ -21,7 +21,7 @@ urlpatterns = patterns('',
         {'document_root': 'D:/google/WordBuddy/siteResources/image/'}
      ),
 
-    (r'^$', 'Demo.views.Demo_index'),
+    url(r'^$', 'Demo.views.Demo_index',name="Demo_index"),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

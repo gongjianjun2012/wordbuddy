@@ -26,7 +26,7 @@
             <div id="menucontainer">
 
                 <ul id="menu">
-                    <li > <a id="home" href="/home">主页</a> </li>
+                    <li > <a id="home" href="{%url Demo_index %}">主页</a> </li>
                     <li > <a id="positive" href="/positive">正向使用</a> </li>
                     <li > <a id="help" href="/help">帮助</a> </li>
                 </ul>
@@ -35,13 +35,12 @@
 
 
         <div id="main">
+            <div id="MainContent">
             {% block content %} {% endblock %}
-           # leave out <  id="MainContent" />
+           </div>
 
             <div id="footer">
-
                 <p >any problems, please contact us.</p>
-
             </div>
         </div>
     </div>
