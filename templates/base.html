@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{{ mytitle }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/Site.css" />
+        <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+</head>
+<body>
+ <div class="page">
+        <div id="header">
+
+            <div id="CompanyLogo">
+                <image id="Image1" src="/image/WordBuddyLogo.jpg" alt="Company logon"  width="150px" height="100px"/>
+            </div>
+
+            <div id="CompanyADs">
+                <image id="Image2"  src="/image/adverstiment.jpg" alt="Company adversiments"  width="800px" height="100px"  />
+            </div>
+
+
+        </div>
+
+            <div id="menucontainer">
+
+                <ul id="menu">
+                    <li > <a id="home" href="/home">主页</a> </li>
+                    <li > <a id="positive" href="/positive">正向使用</a> </li>
+                    <li > <a id="help" href="/help">帮助</a> </li>
+                </ul>
+
+            </div>
+
+
+        <div id="main">
+            {% block content %} {% endblock %}
+           # leave out <  id="MainContent" />
+
+            <div id="footer">
+
+                <p >any problems, please contact us.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
