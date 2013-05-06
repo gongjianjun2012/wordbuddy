@@ -5,10 +5,12 @@
     <ignored path="WordBuddy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/base.html" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367624163958" ignored="false" />
-    <file path="/settings.py" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367462164010" ignored="false" />
+    <file path="/settings.py" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367740459978" ignored="false" />
     <file path="/views.py" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367543097464" ignored="false" />
     <file path="/urls.py" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367622268764" ignored="false" />
     <file path="/Demo_index.html" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367544302489" ignored="false" />
+    <file path="/Python Console" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367740904317" ignored="false" />
+    <file path="/Django Console" changelist="b2f0d42f-fb5c-4439-83d8-4eaea6bd1d25" time="1367663295109" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,25 +24,21 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="WordBuddy" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordBuddy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="60" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.84444445">
+            <state line="23" column="58" selection-start="825" selection-end="825" vertical-scroll-proportion="2.185">
               <folding />
             </state>
           </provider>
@@ -56,11 +54,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/WordBuddy/settings.py" />
         <option value="$PROJECT_DIR$/Demo/views.py" />
         <option value="$PROJECT_DIR$/templates/home/Demo_index.html" />
         <option value="$PROJECT_DIR$/WordBuddy/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/WordBuddy/settings.py" />
+        <option value="$PROJECT_DIR$/Demo/models.py" />
       </list>
     </option>
   </component>
@@ -96,6 +95,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +244,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,6 +252,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -346,6 +346,12 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="false" name="WordBuddy" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,17 +410,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13035496" sideWeight="0.26242775" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625459" sideWeight="0.67012686" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27723378" sideWeight="0.26242775" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.73757225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -486,13 +492,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WordBuddy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="36" selection-start="3313" selection-end="3313" vertical-scroll-proportion="0.0" />
@@ -549,35 +548,42 @@
         <state line="373" column="4" selection-start="5287" selection-end="5287" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WordBuddy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="36" selection-start="3313" selection-end="3313" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="53" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="53" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/Demo_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="62" selection-start="125" selection-end="125" vertical-scroll-proportion="-1.3571428">
-          <folding />
+        <state line="2" column="62" selection-start="125" selection-end="125" vertical-scroll-proportion="-1.3571428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="36" selection-start="3225" selection-end="3225" vertical-scroll-proportion="1.0656325">
+          <folding>
+            <element signature="e#401#440#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WordBuddy/urls.py">
+    <entry file="file://$PROJECT_DIR$/WordBuddy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="60" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+        <state line="14" column="34" selection-start="331" selection-end="331" vertical-scroll-proportion="0.31742242">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.84444445">
+        <state line="40" column="0" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.67160493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordBuddy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="58" selection-start="825" selection-end="825" vertical-scroll-proportion="2.185">
           <folding />
         </state>
       </provider>
