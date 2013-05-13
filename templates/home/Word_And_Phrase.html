@@ -1,0 +1,33 @@
+<table id="WordTable">
+
+<tr>
+<td> {{ word_letter }} </td>
+<td> [ <span id="phoneHolder" style="font-family:Kingsoft Phonetic Plain">{{ pronunciation }}</span> ]</td>
+</tr>
+<tr>
+<td>朗读</td>
+<td>加入语音</td>
+<tr/>
+
+{% for WordTotal in word_totals %}
+ <tr>
+   <td>{{ WordTotal.class_id }}  </td>
+
+   <td> {{WordTotal.chinese_sense }}</td>
+
+   </tr>
+{% endfor %}
+
+</table>
+
+<div id="PhrasesHolder">
+    {% if phraseNumber %}
+... <p>this word has no phrases.</p>
+... {% else %}
+... {% endif %}
+
+
+
+
+
+  </div>

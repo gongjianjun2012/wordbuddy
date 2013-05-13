@@ -1,3 +1,66 @@
 {% extends "base.html"  %}
-{% block title %}home{% endblock %}
-{% block content %}<p>this is the beginning</p> {% endblock %}
+
+{% block title %}home
+{% endblock %}
+{% block content %}
+    <p class="titleparagraph">选择单词级别，然后输入单词进行查找。</p>
+    <form id="myForm" action="/SearchWordAndPhrase/" method="post">
+      {% csrf_token %}
+        选择单词年级：<select name="grade_selected">
+                     <option value ="1">1-4年级</option>
+                     <option value ="2">5年级</option>
+                     <option value="3">6年级</option>
+                     <option value="4">初中一年级</option>
+                     <option value="5">初中二年级</option>
+                     <option value="6">初中三年级</option>
+                     <option value="7">高中一年级</option>
+                     <option value="8">高中二年级</option>
+                     <option value="9">高中三年级</option>
+                     <option value="10">大学一级</option>
+                     <option value="11">大学二级</option>
+                     <option value="12">大学三级</option>
+                     <option value="13">大学四级</option>
+                     <option value="14">大学六级</option>
+                     <option value="15">GRE级别</option>
+                     </select>
+        查询单词: <input type="text" name="word" />
+     <input type="submit" value="Submit Comment" />
+     </form>
+
+
+    <div id="htmlExampleTarget">
+
+       </div>
+
+    <div id="SearchWordListPlace">
+
+      </div>
+
+
+<script language="JavaScript">
+    $(document).ready(function() {
+        $('#myForm').submit(function() { // catch the form's submit event
+            $.ajax({ // create an AJAX call...
+                data: $(this).serialize(), // get the form data
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function(response) { // on success..
+                    $('#htmlExampleTarget').html(response);
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -4,9 +4,10 @@
 <html>
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>{{ mytitle }}</title>
+        <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="/css/Site.css" />
         <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+
 </head>
 <body>
  <div class="page">
@@ -26,7 +27,7 @@
             <div id="menucontainer">
 
                 <ul id="menu">
-                    <li > <a id="home" href="{%url Demo_index %}">主页</a> </li>
+                    <li > <a id="home" href="{%url 'Demo_index' %}">主页</a> </li>
                     <li > <a id="positive" href="/positive">正向使用</a> </li>
                     <li > <a id="help" href="/help">帮助</a> </li>
                 </ul>

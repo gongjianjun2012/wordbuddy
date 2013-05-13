@@ -36,7 +36,7 @@ class PhonmeGroupLinkPhonmeRelation(models.Model):
         db_table = 'phonme_group_link_phonme_relation'
 
 class PhonmeRelation(models.Model):
-    phonme_id = models.CharField(max_length=510L, primary_key=True, db_column='Phonme_ID') # Field name made lowercase.
+    phonme_id = models.CharField(max_length=255L, primary_key=True, db_column='Phonme_ID') # Field name made lowercase.
     phonme = models.CharField(max_length=510L, db_column='Phonme') # Field name made lowercase.
     phonme_sense = models.CharField(max_length=510L, db_column='Phonme_Sense', blank=True) # Field name made lowercase.
     word_example = models.CharField(max_length=510L, db_column='Word_Example', blank=True) # Field name made lowercase.
@@ -78,7 +78,7 @@ class WordAndWordRootId(models.Model):
         db_table = 'word_and_word_root_id'
 
 class WordAndWordRootSet(models.Model):
-    word = models.CharField(max_length=510L, primary_key=True, db_column='Word') # Field name made lowercase.
+    word = models.CharField(max_length=255L, primary_key=True, db_column='Word') # Field name made lowercase.
     word_root_set = models.CharField(max_length=510L, db_column='Word_Root_Set') # Field name made lowercase.
     word_background = models.CharField(max_length=510L, db_column='Word_BackGround', blank=True) # Field name made lowercase.
     class Meta:
@@ -91,7 +91,7 @@ class WordClassSet(models.Model):
         db_table = 'word_class_set'
 
 class WordRoot(models.Model):
-    word_root_id = models.CharField(max_length=510L, primary_key=True, db_column='Word_Root_ID') # Field name made lowercase.
+    word_root_id = models.CharField(max_length=255L, primary_key=True, db_column='Word_Root_ID') # Field name made lowercase.
     word_root = models.CharField(max_length=510L, db_column='Word_Root') # Field name made lowercase.
     word_root_component = models.CharField(max_length=510L, db_column='Word_Root_Component', blank=True) # Field name made lowercase.
     word_root_english_sense = models.TextField(db_column='Word_Root_English_Sense', blank=True) # Field name made lowercase.
