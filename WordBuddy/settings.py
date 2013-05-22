@@ -90,6 +90,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     "D:/google/WordBuddy/templates",
+    "D:\google\python27\Lib\site-packages\django_debug_toolbar-0.8.3-py2.7.egg\debug_toolbar\templates",
 )
 
 # List of callables that know how to import templates from various sources.
@@ -107,11 +108,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 )
 
 ROOT_URLCONF = 'WordBuddy.urls'
+
+INTERNAL_IPS = ('127.0.0.1',)
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'WordBuddy.wsgi.application'
@@ -130,6 +133,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'debug_toolbar',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'Demo',

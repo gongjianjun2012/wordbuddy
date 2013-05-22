@@ -1,0 +1,42 @@
+{% extends "base.html"  %}
+{% block title %}basic Mapper
+{% endblock %}
+{% block content %}
+<p class="titleparagraph" >字母等价类产生的基本词素的语义表</p>
+   <p>{{ phoneme_group.0 }} </p>  <br />
+    {% include "home/MnMapper.html" %}
+
+
+
+
+
+
+
+    <div id="NextPageLink">
+  <br />
+  <a href="/LetterGroup">下一页—字母等价类页</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

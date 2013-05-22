@@ -23,6 +23,10 @@ urlpatterns = patterns('',
 
     url(r'^$', 'Demo.views.Demo_index',name="Demo_index"),
     url(r'^SearchWordAndPhrase/$','Demo.views.SearchWordAndPhrase'),
+    url(r'^SearchWordLists/(\d{1,6})/$','Demo.views.SearchWordLists'),
+    url(r'^SearchWordRoots/(\d{1,6})/$','Demo.views.SearchWordRoots'),
+    url(r'^SearchBasicPhoneme/(\d{1,6})/$','Demo.views.SearchBasicPhoneme'),
+    url(r'^LetterGroup/$','Demo.views.LetterGroup'),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

@@ -1,0 +1,50 @@
+
+  <table id="WordSetHolder">
+    {% for wordAndWordRootSet in word_set_list %}
+
+    <tr>
+   <td>{{ wordAndWordRootSet.word }}</td>
+   <td>{{ wordAndWordRootSet.word_root_set }} </td>
+   <td>{{ wordAndWordRootSet.word_background }}</td>
+
+    </tr>
+
+     {% endfor %}
+ </table>
+
+      <div class="pagination">
+        <a href="#" class="first" data-action="first">&laquo;</a>
+        <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+        <input type="text" readonly="readonly" />
+        <a href="#" class="next" data-action="next">&rsaquo;</a>
+        <a href="#" class="last" data-action="last">&raquo;</a>
+    </div>
+<br />
+ <a id="LinkClick" href="/SearchWordRoots/{{ word_root_id }}" > 下一页-词根词素页</a>
+
+<script language="JavaScript">
+$(document).ready(function() {
+
+    // hide all but the first of our paragraphs
+    $('#WordSetHolder tr:gt(9)').hide();
+     var total_pages=$('#WordSetHolder tr').length/10;
+     var pages=Math.floor(total_pages)+1;
+
+    $('.pagination').jqPagination({
+        max_page    : pages,
+        paged        : function(page) {
+
+            // a new 'page' has been requested
+         var table_first_row=(page-1)*10;
+          var table_last_row=(page-1)*10+9;
+            // hide all paragraphs
+            $('#WordSetHolder tr').hide();
+
+            // but show the one we want
+            $('#WordSetHolder tr').slice(table_first_row,table_last_row).show();
+
+        }
+    });
+
+});
+  </script>

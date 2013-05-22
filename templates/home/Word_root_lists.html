@@ -1,0 +1,52 @@
+{% extends "base.html"  %}
+{% block title %}WordRoot
+{% endblock %}
+{% block content %}
+<p>word root</p>
+<table id="WordSetHolder">
+    {% for wordRoot in word_root_list %}
+
+    <tr>
+   <td>{{ wordRoot.word_root }}</td>
+   <td>{{ wordRoot.word_root_component }} </td>
+   <td>{{ wordRoot.word_root_english_sense }}</td>
+    <td>{{ wordRoot.word_root_chinese_sense }}</td>
+
+    </tr>
+
+  {% endfor %}
+ </table>
+
+<p>word root -- root phoneme</p>
+
+<table id="PhonemeRelationHolder">
+    {% for phonemeRelation in phoneme_relation_list %}
+
+    <tr>
+   <td>{{ phonemeRelation.phonme }}</td>
+   <td>{{ phonemeRelation.phonme_sense }} </td>
+   <td>{{ phonemeRelation.phonme_neigbor_relation }}</td>
+
+    </tr>
+
+  {% endfor %}
+ </table>
+
+ <a href="/SearchBasicPhoneme/{{ letter_group_id }}">下一页—基本词素图</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

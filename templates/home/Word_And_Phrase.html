@@ -6,7 +6,8 @@
 </tr>
 <tr>
 <td>朗读</td>
-<td>加入语音</td>
+<td>真人朗读
+</td>
 <tr/>
 
 {% for WordTotal in word_totals %}
@@ -20,14 +21,49 @@
 
 </table>
 
+
 <div id="PhrasesHolder">
     {% if phraseNumber %}
-... <p>this word has no phrases.</p>
-... {% else %}
-... {% endif %}
+    {% for PhraseTotal in phraseList %}
+     <table>
+    <tr>
+     <td>{{ PhraseTotal.phrase }} </td>
+    <td>{{ PhraseTotal.class_id }}</td>
+    <td>{{ PhraseTotal.chinese_sense }}</td>
+    </tr>
+    </table>
+    {% endfor %}
+    {% else %}
+    <p>this word has no phrases.</p>
+   {% endif %}
 
 
 
+</div>
+<div id="WordRootHolder">
 
+    {% for wordRoot in word_root_list %}
+    <a class="AjaxLink" href="/SearchWordLists/{{ wordRoot.word_root_id }}" > {{ wordRoot.word_root  }}</a>
+     <label>｜</label>
 
-  </div>
+     {% endfor %}
+
+</div>
+
+<div id="WordLists">
+</div>
+<script language="JavaScript">
+    $(document).ready(function() {
+        $('.AjaxLink').click(function() { // catch the form's submit event
+            $.ajax({ // create an AJAX call...
+                url: $(this).attr('href'), // the file to call
+                success: function(response) { // on success..
+                    $('#WordLists').html(response);
+                }
+            });
+            return false;
+        });
+    });
+</script>
+{# use javascript to delete phrase if above phrase is same to it.  #}
+{# use javascript to change class_id to chinese..  #}

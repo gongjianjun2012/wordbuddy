@@ -1,0 +1,44 @@
+{% extends "base.html"  %}
+{% block title %}SearchLetters
+{% endblock %}
+{% block content %}
+
+ <p class="titleparagraph">
+        字母等价类表：
+    </p>
+    <table>
+          <tr>
+              <th>
+                  字母等价类
+              </th>
+              <th>
+                  字母等价类的历史环境
+              </th>
+              <th>
+                  字母等价类的核心语义
+              </th>
+         </tr>
+   {% for letterGroup in letter_group_list %}
+
+    <tr>
+   <td>{{ letterGroup.letters_group}}</td>
+   <td>{{ letterGroup.letters_group_socialbelonging }} </td>
+   <td>{{ letterGroup.letters_group_sense }}</td>
+
+    </tr>
+
+  {% endfor %}
+    </table>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
